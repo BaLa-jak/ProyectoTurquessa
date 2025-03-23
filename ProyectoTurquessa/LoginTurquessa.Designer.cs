@@ -129,7 +129,7 @@
             this.btnSignUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnSignUp_MouseDown);
             this.btnSignUp.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnSignUp_MouseUp);
             // 
-            // Form1
+            // LoginTurquessa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,7 +143,8 @@
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblUsuario);
-            this.Name = "Form1";
+            this.Name = "LoginTurquessa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
