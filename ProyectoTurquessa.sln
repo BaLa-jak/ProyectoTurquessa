@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoTurquessa", "Proyec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{D1068462-32EF-4642-B544-3AFEC2FB6096}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{222B799C-EEBC-4DC4-93D7-A42F1B91261D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D1068462-32EF-4642-B544-3AFEC2FB6096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1068462-32EF-4642-B544-3AFEC2FB6096}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1068462-32EF-4642-B544-3AFEC2FB6096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{222B799C-EEBC-4DC4-93D7-A42F1B91261D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{222B799C-EEBC-4DC4-93D7-A42F1B91261D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{222B799C-EEBC-4DC4-93D7-A42F1B91261D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{222B799C-EEBC-4DC4-93D7-A42F1B91261D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
