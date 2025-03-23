@@ -57,5 +57,15 @@ namespace ProyectoTurquessa
             btnSignUp.BackColor = Color.LightCyan;
 
         }
+
+        private void FormLoginTurquessa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

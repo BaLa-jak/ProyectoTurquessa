@@ -16,5 +16,15 @@ namespace ProyectoTurquessa
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormProveedores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
