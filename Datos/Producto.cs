@@ -14,6 +14,7 @@ namespace Datos
         public string Descripcion { get; set; }
         public string Precio { get; set; }
         public string Descuento { get; set; }
+        public string Imagen { get; set; }
     }
     
 }
