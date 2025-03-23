@@ -16,7 +16,7 @@ namespace ProyectoTurquessa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginTurquessa());
+            Application.Run(new FormLoginTurquessa());
         }
     }
 }

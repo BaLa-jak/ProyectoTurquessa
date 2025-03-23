@@ -1,6 +1,6 @@
 ﻿namespace ProyectoTurquessa
 {
-    partial class Proveedores
+    partial class FormProveedores
     {
         /// <summary>
         /// Required designer variable.
