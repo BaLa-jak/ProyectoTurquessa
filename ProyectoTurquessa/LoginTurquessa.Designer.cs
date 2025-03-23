@@ -1,6 +1,6 @@
 ﻿namespace ProyectoTurquessa
 {
-    partial class Form1
+    partial class LoginTurquessa
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginTurquessa));
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();

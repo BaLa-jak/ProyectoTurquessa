@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoTurquessa
 {
-    public partial class Form1 : Form
+    public partial class LoginTurquessa : Form
     {
-        public Form1()
+        public LoginTurquessa()
         {
             InitializeComponent();
         }
