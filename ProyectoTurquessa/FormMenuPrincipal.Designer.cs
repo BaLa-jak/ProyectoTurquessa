@@ -64,7 +64,7 @@
             this.btnSoporte.Location = new System.Drawing.Point(767, 60);
             this.btnSoporte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSoporte.Name = "btnSoporte";
-            this.btnSoporte.Size = new System.Drawing.Size(134, 27);
+            this.btnSoporte.Size = new System.Drawing.Size(128, 27);
             this.btnSoporte.TabIndex = 5;
             this.btnSoporte.Text = "Contactar Soporte";
             this.btnSoporte.UseVisualStyleBackColor = false;
@@ -72,10 +72,14 @@
             // 
             // btnAgregarProductos
             // 
+            this.btnAgregarProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregarProductos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarProductos.BackgroundImage")));
+            this.btnAgregarProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAgregarProductos.FlatAppearance.BorderSize = 0;
             this.btnAgregarProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarProductos.Location = new System.Drawing.Point(546, 226);
+            this.btnAgregarProductos.Location = new System.Drawing.Point(540, 226);
             this.btnAgregarProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarProductos.Name = "btnAgregarProductos";
             this.btnAgregarProductos.Size = new System.Drawing.Size(134, 129);
@@ -85,7 +89,11 @@
             // 
             // btnAgregarProveedores
             // 
+            this.btnAgregarProveedores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregarProveedores.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarProveedores.BackgroundImage")));
+            this.btnAgregarProveedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAgregarProveedores.FlatAppearance.BorderSize = 0;
             this.btnAgregarProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarProveedores.Location = new System.Drawing.Point(282, 226);
@@ -101,10 +109,10 @@
             this.btnVerProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
             this.btnVerProductos.FlatAppearance.BorderSize = 0;
             this.btnVerProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerProductos.Location = new System.Drawing.Point(546, 385);
+            this.btnVerProductos.Location = new System.Drawing.Point(546, 391);
             this.btnVerProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVerProductos.Name = "btnVerProductos";
-            this.btnVerProductos.Size = new System.Drawing.Size(134, 27);
+            this.btnVerProductos.Size = new System.Drawing.Size(128, 27);
             this.btnVerProductos.TabIndex = 2;
             this.btnVerProductos.Text = "Ver Productos";
             this.btnVerProductos.UseVisualStyleBackColor = false;
@@ -115,10 +123,10 @@
             this.btnVerProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(189)))), ((int)(((byte)(212)))));
             this.btnVerProveedores.FlatAppearance.BorderSize = 0;
             this.btnVerProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerProveedores.Location = new System.Drawing.Point(282, 385);
+            this.btnVerProveedores.Location = new System.Drawing.Point(282, 391);
             this.btnVerProveedores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVerProveedores.Name = "btnVerProveedores";
-            this.btnVerProveedores.Size = new System.Drawing.Size(134, 27);
+            this.btnVerProveedores.Size = new System.Drawing.Size(134, 24);
             this.btnVerProveedores.TabIndex = 1;
             this.btnVerProveedores.Text = "Ver Proveedores";
             this.btnVerProveedores.UseVisualStyleBackColor = false;
@@ -126,11 +134,13 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 6);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(951, 567);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -138,10 +148,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 548);
+            this.ClientSize = new System.Drawing.Size(929, 544);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormMenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMenuPrincipal";
             this.Load += new System.EventHandler(this.FormMenuPrincipal_Load);
             this.groupBox1.ResumeLayout(false);

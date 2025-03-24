@@ -39,22 +39,19 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.groupBox1.Location = new System.Drawing.Point(-8, -8);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(-4, -4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.groupBox1.Size = new System.Drawing.Size(1612, 158);
+            this.groupBox1.Size = new System.Drawing.Size(806, 82);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 446);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 232);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(1546, 598);
+            this.dataGridView1.Size = new System.Drawing.Size(773, 311);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnVolverInicio
@@ -66,10 +63,10 @@
             this.btnVolverInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolverInicio.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.btnVolverInicio.Location = new System.Drawing.Point(944, 375);
-            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVolverInicio.Location = new System.Drawing.Point(456, 175);
+            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolverInicio.Name = "btnVolverInicio";
-            this.btnVolverInicio.Size = new System.Drawing.Size(298, 62);
+            this.btnVolverInicio.Size = new System.Drawing.Size(149, 32);
             this.btnVolverInicio.TabIndex = 62;
             this.btnVolverInicio.Text = "Volver al inicio";
             this.btnVolverInicio.UseVisualStyleBackColor = false;
@@ -84,10 +81,10 @@
             this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarProducto.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarProducto.Location = new System.Drawing.Point(1280, 375);
-            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(624, 175);
+            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(298, 62);
+            this.btnAgregarProducto.Size = new System.Drawing.Size(149, 32);
             this.btnAgregarProducto.TabIndex = 61;
             this.btnAgregarProducto.Text = "Agregar producto";
             this.btnAgregarProducto.UseVisualStyleBackColor = false;
@@ -99,29 +96,29 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.label1.Location = new System.Drawing.Point(52, 185);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(26, 96);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(584, 67);
+            this.label1.Size = new System.Drawing.Size(306, 33);
             this.label1.TabIndex = 63;
             this.label1.Text = "Productos existentes";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // FormTablaProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1600, 1067);
+            this.ClientSize = new System.Drawing.Size(809, 609);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVolverInicio);
             this.Controls.Add(this.btnAgregarProducto);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FormTablaProductos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTablaProductos";
+            this.Load += new System.EventHandler(this.FormTablaProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

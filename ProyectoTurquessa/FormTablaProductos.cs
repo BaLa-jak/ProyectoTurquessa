@@ -35,5 +35,10 @@ namespace ProyectoTurquessa
             form1.Show();
             this.Hide();
         }
+
+        private void FormTablaProductos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

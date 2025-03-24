@@ -42,11 +42,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.label1.Location = new System.Drawing.Point(22, 167);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(11, 87);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(615, 67);
+            this.label1.Size = new System.Drawing.Size(322, 33);
             this.label1.TabIndex = 68;
             this.label1.Text = "Nuestros proveedores";
             // 
@@ -59,10 +58,10 @@
             this.btnVolverInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolverInicio.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.btnVolverInicio.Location = new System.Drawing.Point(946, 290);
-            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVolverInicio.Location = new System.Drawing.Point(441, 140);
+            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolverInicio.Name = "btnVolverInicio";
-            this.btnVolverInicio.Size = new System.Drawing.Size(298, 62);
+            this.btnVolverInicio.Size = new System.Drawing.Size(149, 32);
             this.btnVolverInicio.TabIndex = 67;
             this.btnVolverInicio.Text = "Volver al inicio";
             this.btnVolverInicio.UseVisualStyleBackColor = false;
@@ -77,10 +76,10 @@
             this.btnRegistrarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarProveedor.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarProveedor.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarProveedor.Location = new System.Drawing.Point(1282, 290);
-            this.btnRegistrarProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistrarProveedor.Location = new System.Drawing.Point(617, 140);
+            this.btnRegistrarProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrarProveedor.Name = "btnRegistrarProveedor";
-            this.btnRegistrarProveedor.Size = new System.Drawing.Size(298, 62);
+            this.btnRegistrarProveedor.Size = new System.Drawing.Size(149, 32);
             this.btnRegistrarProveedor.TabIndex = 66;
             this.btnRegistrarProveedor.Text = "Registrar proveedor";
             this.btnRegistrarProveedor.UseVisualStyleBackColor = false;
@@ -89,37 +88,34 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 362);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 188);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(1546, 598);
+            this.dataGridView1.Size = new System.Drawing.Size(773, 311);
             this.dataGridView1.TabIndex = 65;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.groupBox1.Location = new System.Drawing.Point(-6, -92);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.groupBox1.Location = new System.Drawing.Point(-3, -48);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.groupBox1.Size = new System.Drawing.Size(1612, 229);
+            this.groupBox1.Size = new System.Drawing.Size(806, 119);
             this.groupBox1.TabIndex = 64;
             this.groupBox1.TabStop = false;
             // 
             // FormTablaProveedores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1600, 985);
+            this.ClientSize = new System.Drawing.Size(801, 555);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVolverInicio);
             this.Controls.Add(this.btnRegistrarProveedor);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FormTablaProveedores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTablaProveedores";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
