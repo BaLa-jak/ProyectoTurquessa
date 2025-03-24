@@ -16,5 +16,42 @@ namespace ProyectoTurquessa
         {
             InitializeComponent();
         }
+
+        private void btnSubirImagen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCategoria_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolverInicio_Click(object sender, EventArgs e)
+        {
+            FormMenuPrincipal form1 = new FormMenuPrincipal();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

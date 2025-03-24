@@ -23,5 +23,12 @@ namespace ProyectoTurquessa
             formProveedores.Show();
             this.Hide();
         }
+
+        private void btnVolverInicio_Click(object sender, EventArgs e)
+        {
+            FormMenuPrincipal form1 = new FormMenuPrincipal();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

@@ -65,7 +65,9 @@ namespace ProyectoTurquessa
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-
+            FormMenuPrincipal Menu = new FormMenuPrincipal();
+            Menu.Show();
+            this.Hide();
         }
     }
 }
