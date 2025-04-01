@@ -58,5 +58,10 @@ namespace ProyectoTurquessa
         {
 
         }
+
+        private void txtIdProducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

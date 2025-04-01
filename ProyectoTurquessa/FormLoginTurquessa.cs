@@ -69,5 +69,13 @@ namespace ProyectoTurquessa
             Menu.Show();
             this.Hide();
         }
+
+        private void btnNuevoUsuario_Click(object sender, EventArgs e)
+        {
+            FormRegistro fr = new FormRegistro();
+            fr.Show();
+            this.Hide();
+        }
+        
     }
 }
