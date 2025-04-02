@@ -89,6 +89,7 @@
             resources.ApplyResources(this.txtContraseña, "txtContraseña");
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.UseSystemPasswordChar = true;
+            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // lblContraseña
             // 
@@ -115,6 +116,7 @@
             resources.ApplyResources(this.txtConfirmarContraseña, "txtConfirmarContraseña");
             this.txtConfirmarContraseña.Name = "txtConfirmarContraseña";
             this.txtConfirmarContraseña.UseSystemPasswordChar = true;
+            this.txtConfirmarContraseña.TextChanged += new System.EventHandler(this.txtConfirmarContraseña_TextChanged);
             // 
             // lblConfirmarContraseña
             // 

@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Datos;
+using LinqToDB;
 
 namespace Logica
 {
@@ -47,6 +50,26 @@ namespace Logica
                 // Conversión de imagen
                 // Crear la conexión e insertar el registro
                 Conexion conexion = new Conexion();
+                conexion.Insert(new Producto
+                {
+                    idProducto = textBoxes[0].Text,
+                    Nombre = textBoxes[1].Text,
+                    Categoria = textBoxes[2].Text,
+                    Descripcion = textBoxes[3].Text,
+                    Precio = textBoxes[4].Text,
+                    Descuento = textBoxes[5].Text,
+                });
+
+
+                // Aviso de ingreso satisfactorio
+                MessageBox.Show("Ingreso Satisfactorio");
+
+                // Limpiar los campos
+                for (int i = 0; i < textBoxes.Count; i++)
+                {
+                    textBoxes[i].Text = "";
+                    ListaLabels[i].ForeColor = Color.Black;
+                }
             }
         }
     }

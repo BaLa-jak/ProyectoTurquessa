@@ -14,6 +14,7 @@ namespace ProyectoTurquessa
     public partial class FormProducto : Form
     {
         private LogicaProducto logicaProducto;
+        private LogicaSubirImagen subirImagen;
         public FormProducto()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace ProyectoTurquessa
             Listlabels.Add(lblDescripcion);
             Listlabels.Add(lblPrecio);
             Listlabels.Add(lblDescuento);
-            object[] objects = { btnSubirImagen };
+            object[] objects = { pictureBox1 };
             LogicaSubirImagen subirImagen = new LogicaSubirImagen();
 
 
@@ -47,7 +48,7 @@ namespace ProyectoTurquessa
 
         private void btnSubirImagen_Click(object sender, EventArgs e)
         {
-
+  
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -57,22 +58,43 @@ namespace ProyectoTurquessa
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-
+            logicaProducto.MensajesRequeridos();
         }
 
         private void txtDescripcion_TextChanged(object sender, EventArgs e)
         {
-
+            if (txtDescripcion.Text == "")
+            {
+                lblDescripcion.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblDescripcion.ForeColor = Color.Aqua;
+            }
         }
 
         private void txtCategoria_TextChanged(object sender, EventArgs e)
         {
-
+            if (txtCategoria.Text == "")
+            {
+                lblCategoria.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblCategoria.ForeColor = Color.Aqua;
+            }
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
-
+            if (txtNombre.Text == "")
+            {
+                lblNombre.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblNombre.ForeColor = Color.Aqua;
+            }
         }
 
         private void btnVolverInicio_Click(object sender, EventArgs e)
@@ -89,7 +111,43 @@ namespace ProyectoTurquessa
 
         private void txtIdProducto_TextChanged(object sender, EventArgs e)
         {
+            if (txtIdProducto.Text == "")
+            {
+                lblProducto.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblProducto.ForeColor = Color.Aqua;
+            }
+        }
 
+        private void txtPrecio_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPrecio.Text == "")
+            {
+                lblPrecio.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblPrecio.ForeColor = Color.Aqua;
+            }
+        }
+
+        private void txtDescuento_TextChanged(object sender, EventArgs e)
+        {
+            if (txtDescuento.Text == "")
+            {
+                lblDescuento.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblDescuento.ForeColor = Color.Aqua;
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            subirImagen.UploadImage(pictureBox1);
         }
     }
 }

@@ -85,7 +85,7 @@
             this.btnAgregarProductos.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarProductos.Name = "btnAgregarProductos";
             this.btnAgregarProductos.Size = new System.Drawing.Size(134, 129);
-            this.btnAgregarProductos.TabIndex = 4;
+            this.btnAgregarProductos.TabIndex = 3;
             this.btnAgregarProductos.UseVisualStyleBackColor = true;
             this.btnAgregarProductos.Click += new System.EventHandler(this.btnAgregarProductos_Click);
             // 
@@ -100,7 +100,7 @@
             this.btnAgregarProveedores.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarProveedores.Name = "btnAgregarProveedores";
             this.btnAgregarProveedores.Size = new System.Drawing.Size(134, 129);
-            this.btnAgregarProveedores.TabIndex = 3;
+            this.btnAgregarProveedores.TabIndex = 1;
             this.btnAgregarProveedores.UseVisualStyleBackColor = true;
             this.btnAgregarProveedores.Click += new System.EventHandler(this.btnAgregarProveedores_Click);
             // 
@@ -114,7 +114,7 @@
             this.btnVerProductos.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerProductos.Name = "btnVerProductos";
             this.btnVerProductos.Size = new System.Drawing.Size(128, 27);
-            this.btnVerProductos.TabIndex = 2;
+            this.btnVerProductos.TabIndex = 4;
             this.btnVerProductos.Text = "Ver Productos";
             this.btnVerProductos.UseVisualStyleBackColor = false;
             this.btnVerProductos.Click += new System.EventHandler(this.btnVerProductos_Click);
@@ -129,7 +129,7 @@
             this.btnVerProveedores.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerProveedores.Name = "btnVerProveedores";
             this.btnVerProveedores.Size = new System.Drawing.Size(134, 24);
-            this.btnVerProveedores.TabIndex = 1;
+            this.btnVerProveedores.TabIndex = 2;
             this.btnVerProveedores.Text = "Ver Proveedores";
             this.btnVerProveedores.UseVisualStyleBackColor = false;
             this.btnVerProveedores.Click += new System.EventHandler(this.btnVerProveedores_Click);

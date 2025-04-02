@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Datos;
+using LinqToDB;
 
 namespace Logica
 {
@@ -58,15 +60,14 @@ namespace Logica
 
                 // Crear la conexión e insertar el registro 
                 Conexion conexion = new Conexion();
-                conexion.Insert(new Estudiante
+                conexion.Insert(new Proveedor
                 {
-                    ClaveUsuario = textBoxes[0].Text,
-                    Nombre = textBoxes[1].Text,
-                    ApellidoPaterno = textBoxes[2].Text,
-                    ApellidoMaterno = textBoxes[3].Text,
-                    Direccion = textBoxes[4].Text,
-                    CorreoElectronico = textBoxes[5].Text,
-                    Telefono = textBoxes[6].Text,
+                    idProveedor = textBoxes[0].Text,
+                    Empresa = textBoxes[1].Text,
+                    Nombre = textBoxes[2].Text,
+                    Apellido = textBoxes[3].Text,
+                    Correo = textBoxes[4].Text,
+                    Telefono = textBoxes[5].Text,
                 });
 
 

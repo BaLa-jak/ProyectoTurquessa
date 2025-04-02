@@ -48,8 +48,9 @@
             this.btnVolverInicio = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSubirImagen = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -87,6 +88,7 @@
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(445, 31);
             this.txtDescuento.TabIndex = 52;
+            this.txtDescuento.TextChanged += new System.EventHandler(this.txtDescuento_TextChanged);
             // 
             // lblPrecio
             // 
@@ -111,6 +113,7 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(445, 31);
             this.txtPrecio.TabIndex = 51;
+            this.txtPrecio.TextChanged += new System.EventHandler(this.txtPrecio_TextChanged);
             // 
             // lblDescripcion
             // 
@@ -296,22 +299,15 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btnSubirImagen
+            // pictureBox2
             // 
-            this.btnSubirImagen.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSubirImagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.btnSubirImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubirImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubirImagen.ForeColor = System.Drawing.Color.White;
-            this.btnSubirImagen.Image = ((System.Drawing.Image)(resources.GetObject("btnSubirImagen.Image")));
-            this.btnSubirImagen.Location = new System.Drawing.Point(794, 403);
-            this.btnSubirImagen.Name = "btnSubirImagen";
-            this.btnSubirImagen.Size = new System.Drawing.Size(180, 174);
-            this.btnSubirImagen.TabIndex = 62;
-            this.btnSubirImagen.Text = "Subir imagen";
-            this.btnSubirImagen.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSubirImagen.UseVisualStyleBackColor = false;
-            this.btnSubirImagen.Click += new System.EventHandler(this.btnSubirImagen_Click);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(664, 385);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(438, 222);
+            this.pictureBox2.TabIndex = 62;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // FormProducto
             // 
@@ -319,8 +315,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1245, 676);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnSubirImagen);
             this.Controls.Add(this.btnVolverInicio);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.lblDescuento);
@@ -344,6 +340,7 @@
             this.Text = "Registrar producto";
             this.Load += new System.EventHandler(this.FormProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,6 +366,6 @@
         private System.Windows.Forms.Button btnVolverInicio;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnSubirImagen;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

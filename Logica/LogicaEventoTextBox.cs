@@ -26,14 +26,18 @@ namespace Logica
 
 
         //Crearemos un metodo publico, para recibir solo numeros
-        public void soloNumeros(KeyPressEventArgs key)
+        public void SoloNumeros(KeyPressEventArgs keyPressEventArgs)
         {
-            //Validacion del text box ID
-            if (!char.IsNumber(key.KeyChar) &&
-                key.KeyChar != '\b') //si es diferente de un backspace
+            Boolean soloNumerosValidacion = !char.IsNumber(keyPressEventArgs.KeyChar) &&
+                    keyPressEventArgs.KeyChar != '\b' &&
+                    keyPressEventArgs.KeyChar != ' ';
+
+            if (soloNumerosValidacion)
             {
-                key.Handled = true; //Si no es numero, no se podra escribir
+                keyPressEventArgs.Handled = true;
+
             }
+
         }
 
 

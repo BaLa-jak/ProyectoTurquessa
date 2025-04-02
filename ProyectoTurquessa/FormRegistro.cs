@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logica;
+using static LinqToDB.Sql;
 
 namespace ProyectoTurquessa
 {
@@ -50,7 +51,42 @@ namespace ProyectoTurquessa
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
+            if (txtUsuario.Text == "")
+            {
+                lblUsuario.ForeColor = Color.Red;
 
+            }
+            else
+            {
+                lblUsuario.ForeColor = Color.Aqua;
+            }
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+            if (txtContraseña.Text == "")
+            {
+                lblContraseña.ForeColor = Color.Red;
+
+            }
+            else
+            {
+                lblContraseña.ForeColor = Color.Aqua;
+            }
+        }
+
+        private void txtConfirmarContraseña_TextChanged(object sender, EventArgs e)
+        {
+            if (txtConfirmarContraseña.Text == "")
+            {
+                lblConfirmarContraseña.ForeColor = Color.Red;
+
+            }
+            else
+            {
+                lblConfirmarContraseña.ForeColor = Color.Aqua;
+            }
         }
     }
-}
+    }
+

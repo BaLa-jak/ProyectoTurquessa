@@ -69,7 +69,79 @@ namespace ProyectoTurquessa
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            logicaProveedor.MensajesRequeridos();
+        }
 
+        private void txtIdProveedor_TextChanged(object sender, EventArgs e)
+        {
+            if (txtIdProveedor.Text == "")
+            {
+                lblProveedor.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblProveedor.ForeColor = Color.Aqua;
+            }
+        }
+
+        private void txtEmpresa_TextChanged(object sender, EventArgs e)
+        {
+            if (txtEmpresa.Text == "")
+            {
+                lblEmpresa.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblEmpresa.ForeColor = Color.Aqua;
+            }
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNombre.Text == "")
+            {
+                lblNombre.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblNombre.ForeColor = Color.Aqua;
+            }
+        }
+
+        private void txtApellido_TextChanged(object sender, EventArgs e)
+        {
+            if (txtApellido.Text == "")
+            {
+                lblApellido.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblApellido.ForeColor = Color.Aqua;
+            }
+        }
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCorreo.Text == "")
+            {
+                lblCorreo.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblCorreo.ForeColor = Color.Aqua;
+            }
+        }
+
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTelefono.Text == "")
+            {
+                lblTelefono.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblTelefono.ForeColor = Color.Aqua;
+            }
         }
     }
 }
