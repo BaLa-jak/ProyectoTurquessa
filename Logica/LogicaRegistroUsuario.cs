@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Datos;
+using LinqToDB;
 
 namespace Logica
 {
@@ -32,6 +34,12 @@ namespace Logica
                 MessageBox.Show("Las contraseñas no coinciden");
                 return;
             }
+            Conexion conexion = new Conexion();
+            conexion.Insert(new Usuario
+            {
+                Nombre = textBoxes[0].Text,
+                Clave = textBoxes[1].Text
+            });
             MessageBox.Show("Usuario registrado con exito");
         }
 

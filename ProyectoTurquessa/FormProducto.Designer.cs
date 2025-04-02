@@ -89,6 +89,7 @@
             this.txtDescuento.Size = new System.Drawing.Size(445, 31);
             this.txtDescuento.TabIndex = 52;
             this.txtDescuento.TextChanged += new System.EventHandler(this.txtDescuento_TextChanged);
+            this.txtDescuento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValidacion_KeyPress);
             // 
             // lblPrecio
             // 
@@ -114,6 +115,7 @@
             this.txtPrecio.Size = new System.Drawing.Size(445, 31);
             this.txtPrecio.TabIndex = 51;
             this.txtPrecio.TextChanged += new System.EventHandler(this.txtPrecio_TextChanged);
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValidacion_KeyPress);
             // 
             // lblDescripcion
             // 
@@ -139,6 +141,7 @@
             this.txtDescripcion.Size = new System.Drawing.Size(445, 31);
             this.txtDescripcion.TabIndex = 50;
             this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
+            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soloLetrasValidacion_KeyPress);
             // 
             // label2
             // 
@@ -200,6 +203,7 @@
             this.txtCategoria.Size = new System.Drawing.Size(445, 30);
             this.txtCategoria.TabIndex = 47;
             this.txtCategoria.TextChanged += new System.EventHandler(this.txtCategoria_TextChanged);
+            this.txtCategoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soloLetrasValidacion_KeyPress);
             // 
             // lblNombre
             // 
@@ -225,6 +229,7 @@
             this.txtNombre.Size = new System.Drawing.Size(445, 31);
             this.txtNombre.TabIndex = 46;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soloLetrasValidacion_KeyPress);
             // 
             // lblProducto
             // 
@@ -249,7 +254,8 @@
             this.txtIdProducto.Name = "txtIdProducto";
             this.txtIdProducto.Size = new System.Drawing.Size(445, 31);
             this.txtIdProducto.TabIndex = 45;
-            this.txtIdProducto.TextChanged += new System.EventHandler(this.txtIdProducto_TextChanged);
+            this.txtIdProducto.TextChanged += new System.EventHandler(this.txtValidacion_KeyPress);
+            this.txtIdProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValidacion_KeyPress);
             // 
             // btnVolverInicio
             // 

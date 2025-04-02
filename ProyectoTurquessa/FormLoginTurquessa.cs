@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logica;
 
 namespace ProyectoTurquessa
 {
     public partial class FormLoginTurquessa : Form
     {
+        private LogicaValidar LogicaValidar;
         public FormLoginTurquessa()
         {
             InitializeComponent();
+           
+
+            LogicaValidar = new LogicaValidar(txtUsuario.Text, txtContraseña.Text);
+
+
+
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
@@ -65,9 +73,14 @@ namespace ProyectoTurquessa
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            FormMenuPrincipal Menu = new FormMenuPrincipal();
-            Menu.Show();
-            this.Hide();
+            LogicaValidar logicaValidar = new LogicaValidar(txtUsuario.Text, txtContraseña.Text);
+
+            if (logicaValidar.validarUsuario()) {
+                FormMenuPrincipal Menu = new FormMenuPrincipal();
+                Menu.Show();
+                this.Hide();
+            }
+            
         }
 
         private void btnNuevoUsuario_Click(object sender, EventArgs e)
@@ -76,6 +89,10 @@ namespace ProyectoTurquessa
             fr.Show();
             this.Hide();
         }
-        
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

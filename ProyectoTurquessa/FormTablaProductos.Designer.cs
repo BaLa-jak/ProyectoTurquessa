@@ -29,27 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTablaProductos));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ProductosGridView = new System.Windows.Forms.DataGridView();
             this.btnVolverInicio = new System.Windows.Forms.Button();
             this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductosGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // ProductosGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ProductosGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 232);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(807, 352);
-            this.dataGridView1.TabIndex = 1;
+            this.ProductosGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.ProductosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ProductosGridView.Location = new System.Drawing.Point(16, 232);
+            this.ProductosGridView.Name = "ProductosGridView";
+            this.ProductosGridView.RowHeadersWidth = 82;
+            this.ProductosGridView.Size = new System.Drawing.Size(807, 352);
+            this.ProductosGridView.TabIndex = 1;
             // 
             // btnVolverInicio
             // 
@@ -60,7 +61,7 @@
             this.btnVolverInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolverInicio.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.btnVolverInicio.Location = new System.Drawing.Point(476, 175);
+            this.btnVolverInicio.Location = new System.Drawing.Point(310, 175);
             this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnVolverInicio.Name = "btnVolverInicio";
             this.btnVolverInicio.Size = new System.Drawing.Size(149, 32);
@@ -114,22 +115,41 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(473, 175);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 32);
+            this.button1.TabIndex = 64;
+            this.button1.Text = "Actualizar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormTablaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(845, 609);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVolverInicio);
             this.Controls.Add(this.btnAgregarProducto);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ProductosGridView);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormTablaProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTablaProductos";
             this.Load += new System.EventHandler(this.FormTablaProductos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductosGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,10 +157,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ProductosGridView;
         private System.Windows.Forms.Button btnVolverInicio;
         private System.Windows.Forms.Button btnAgregarProducto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

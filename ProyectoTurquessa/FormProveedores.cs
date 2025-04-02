@@ -14,6 +14,7 @@ namespace ProyectoTurquessa
     public partial class FormProveedores : Form
     {
         private LogicaProveedor logicaProveedor;
+        private DataGridView dataGrid;
         public FormProveedores()
         {
             InitializeComponent();
@@ -37,10 +38,13 @@ namespace ProyectoTurquessa
             Listlabels.Add(lblCorreo);
             Listlabels.Add(lblTelefono);
 
+               
+            Object[] objects = { dataGrid };
+
 
 
             //Inicializar Constructor
-            logicaProveedor = new LogicaProveedor(Listlabels, textBoxes);
+            logicaProveedor = new LogicaProveedor(Listlabels, textBoxes, objects);
 
           
         }
@@ -142,6 +146,18 @@ namespace ProyectoTurquessa
             {
                 lblTelefono.ForeColor = Color.Aqua;
             }
+        }
+
+        private void soloLetrasValidacion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxEvent logicaProducto = new TextBoxEvent();
+            logicaProducto.soloLetras(e);
+        }
+
+        private void soloNumeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxEvent logicaProducto = new TextBoxEvent();
+            logicaProducto.SoloNumeros(e);
         }
     }
 }

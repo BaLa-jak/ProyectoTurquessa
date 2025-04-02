@@ -69,6 +69,7 @@
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // pictureBox1
             // 

@@ -87,6 +87,11 @@ namespace ProyectoTurquessa
                 lblConfirmarContraseña.ForeColor = Color.Aqua;
             }
         }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            LogicaRegistroUsuario.ValidarCampos();
+        }
     }
     }
 

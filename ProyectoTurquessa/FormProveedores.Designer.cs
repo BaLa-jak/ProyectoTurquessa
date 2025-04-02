@@ -63,6 +63,7 @@
             this.txtIdProveedor.Size = new System.Drawing.Size(525, 31);
             this.txtIdProveedor.TabIndex = 1;
             this.txtIdProveedor.TextChanged += new System.EventHandler(this.txtIdProveedor_TextChanged);
+            this.txtIdProveedor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soloNumeros_KeyPress);
             // 
             // lblProveedor
             // 
@@ -102,6 +103,7 @@
             this.txtEmpresa.Size = new System.Drawing.Size(525, 31);
             this.txtEmpresa.TabIndex = 2;
             this.txtEmpresa.TextChanged += new System.EventHandler(this.txtEmpresa_TextChanged);
+            this.txtEmpresa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soloLetrasValidacion_KeyPress);
             // 
             // label3
             // 
@@ -155,6 +157,7 @@
             this.txtNombre.Size = new System.Drawing.Size(525, 30);
             this.txtNombre.TabIndex = 3;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soloLetrasValidacion_KeyPress);
             // 
             // lblApellido
             // 
@@ -180,6 +183,7 @@
             this.txtApellido.Size = new System.Drawing.Size(525, 31);
             this.txtApellido.TabIndex = 4;
             this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soloLetrasValidacion_KeyPress);
             // 
             // label2
             // 
@@ -258,6 +262,7 @@
             this.txtTelefono.Size = new System.Drawing.Size(525, 31);
             this.txtTelefono.TabIndex = 6;
             this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.soloNumeros_KeyPress);
             // 
             // btnGuardar
             // 

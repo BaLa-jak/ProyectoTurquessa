@@ -14,10 +14,14 @@ namespace Logica
     {
         private List<Label> ListaLabels = new List<Label>();
         private List<TextBox> textBoxes = new List<TextBox>();
-        public LogicaProducto(List<Label> ListaLabels, List<TextBox> textBoxes)
+        PictureBox pictureBox;
+        private DataGridView dataGrid;
+        public LogicaProducto(List<Label> ListaLabels, List<TextBox> textBoxes, object[] objects)
         {
             this.ListaLabels = ListaLabels;
             this.textBoxes = textBoxes;
+            pictureBox = (PictureBox)objects[0];
+            dataGrid = (DataGridView)objects[1];
         }
         public void MensajesRequeridos()
         {
@@ -48,6 +52,8 @@ namespace Logica
                     ListaLabels[i].ForeColor = System.Drawing.Color.Green;
                 }
                 // Conversión de imagen
+                LogicaSubirImagen subirImagen = new LogicaSubirImagen();
+                var imgArray = subirImagen.ConvertirImagen(pictureBox.Image);
                 // Crear la conexión e insertar el registro
                 Conexion conexion = new Conexion();
                 conexion.Insert(new Producto
@@ -58,6 +64,7 @@ namespace Logica
                     Descripcion = textBoxes[3].Text,
                     Precio = textBoxes[4].Text,
                     Descuento = textBoxes[5].Text,
+                    Imagen = imgArray
                 });
 
 
@@ -71,6 +78,12 @@ namespace Logica
                     ListaLabels[i].ForeColor = Color.Black;
                 }
             }
+        }
+        public void GetElementosTablaView()
+        {
+            Conexion conexion = new Conexion();
+            List<Producto> productos = conexion.GetTable<Producto>().ToList();
+            dataGrid.DataSource = productos;
         }
     }
 }

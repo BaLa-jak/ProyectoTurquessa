@@ -15,6 +15,8 @@ namespace ProyectoTurquessa
     {
         private LogicaProducto logicaProducto;
         private LogicaSubirImagen subirImagen;
+        private DataGridView gridImagen;
+        
         public FormProducto()
         {
             InitializeComponent();
@@ -37,13 +39,14 @@ namespace ProyectoTurquessa
             Listlabels.Add(lblDescripcion);
             Listlabels.Add(lblPrecio);
             Listlabels.Add(lblDescuento);
-            object[] objects = { pictureBox1 };
+            object[] objects = { pictureBox1, gridImagen };
             LogicaSubirImagen subirImagen = new LogicaSubirImagen();
+            
 
 
 
             //Inicializar Constructor
-            logicaProducto = new LogicaProducto(Listlabels, textBoxes);
+            logicaProducto = new LogicaProducto(Listlabels, textBoxes, objects);
         }
 
         private void btnSubirImagen_Click(object sender, EventArgs e)
@@ -111,14 +114,12 @@ namespace ProyectoTurquessa
 
         private void txtIdProducto_TextChanged(object sender, EventArgs e)
         {
-            if (txtIdProducto.Text == "")
-            {
-                lblProducto.ForeColor = Color.Red;
-            }
-            else
-            {
-                lblProducto.ForeColor = Color.Aqua;
-            }
+         
+        }
+        private void txtValidacion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxEvent logicaProducto = new TextBoxEvent();
+            logicaProducto.SoloNumeros(e);
         }
 
         private void txtPrecio_TextChanged(object sender, EventArgs e)
@@ -147,7 +148,18 @@ namespace ProyectoTurquessa
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            subirImagen.UploadImage(pictureBox1);
+            LogicaSubirImagen subirImagen = new LogicaSubirImagen();  
+            subirImagen.UploadImage(pictureBox2);
+        }
+
+        private void txtValidacion_KeyPress(object sender, EventArgs e)
+        {
+
+        }
+        private void soloLetrasValidacion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBoxEvent logicaProducto = new TextBoxEvent();
+            logicaProducto.soloLetras(e);
         }
     }
 }
