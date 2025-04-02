@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Logica</RootNamespace>
     <AssemblyName>Logica</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +40,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
@@ -56,6 +58,9 @@
   <ItemGroup>
     <Compile Include="AccesoClases.cs" />
     <Compile Include="LogicaEventoTextBox.cs" />
+    <Compile Include="LogicaProducto.cs" />
+    <Compile Include="LogicaProveedor.cs" />
+    <Compile Include="LogicaRegistroUsuario.cs" />
     <Compile Include="LogicaValidar.cs" />
     <Compile Include="LogicaSubirImagen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

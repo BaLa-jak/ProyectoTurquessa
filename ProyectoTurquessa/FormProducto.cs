@@ -7,14 +7,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logica;
 
 namespace ProyectoTurquessa
 {
     public partial class FormProducto : Form
     {
+        private LogicaProducto logicaProducto;
         public FormProducto()
         {
             InitializeComponent();
+
+            //establecer la lista
+            List<TextBox> textBoxes = new List<TextBox>();
+            textBoxes.Add(txtIdProducto);
+            textBoxes.Add(txtNombre);
+            textBoxes.Add(txtCategoria);
+            textBoxes.Add(txtDescripcion);
+            textBoxes.Add(txtPrecio);
+            textBoxes.Add(txtDescuento);
+
+
+            //lista de Etiquetas
+            List<Label> Listlabels = new List<Label>();
+            Listlabels.Add(lblProducto);
+            Listlabels.Add(lblNombre);
+            Listlabels.Add(lblCategoria);
+            Listlabels.Add(lblDescripcion);
+            Listlabels.Add(lblPrecio);
+            Listlabels.Add(lblDescuento);
+            object[] objects = { btnSubirImagen };
+            LogicaSubirImagen subirImagen = new LogicaSubirImagen();
+
+
+
+            //Inicializar Constructor
+            logicaProducto = new LogicaProducto(Listlabels, textBoxes);
         }
 
         private void btnSubirImagen_Click(object sender, EventArgs e)

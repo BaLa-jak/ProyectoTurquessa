@@ -37,8 +37,8 @@
             this.lblContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtConfirmarContraseña = new System.Windows.Forms.TextBox();
+            this.lblConfirmarContraseña = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -101,6 +101,7 @@
             // 
             resources.ApplyResources(this.txtUsuario, "txtUsuario");
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // lblUsuario
             // 
@@ -109,18 +110,18 @@
             this.lblUsuario.ForeColor = System.Drawing.Color.White;
             this.lblUsuario.Name = "lblUsuario";
             // 
-            // textBox1
+            // txtConfirmarContraseña
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.textBox1.UseSystemPasswordChar = true;
+            resources.ApplyResources(this.txtConfirmarContraseña, "txtConfirmarContraseña");
+            this.txtConfirmarContraseña.Name = "txtConfirmarContraseña";
+            this.txtConfirmarContraseña.UseSystemPasswordChar = true;
             // 
-            // label1
+            // lblConfirmarContraseña
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.lblConfirmarContraseña, "lblConfirmarContraseña");
+            this.lblConfirmarContraseña.BackColor = System.Drawing.Color.Transparent;
+            this.lblConfirmarContraseña.ForeColor = System.Drawing.Color.White;
+            this.lblConfirmarContraseña.Name = "lblConfirmarContraseña";
             // 
             // pictureBox4
             // 
@@ -135,9 +136,9 @@
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.txtUsuario);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtConfirmarContraseña);
             this.groupBox1.Controls.Add(this.lblUsuario);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblConfirmarContraseña);
             this.groupBox1.Controls.Add(this.lblContraseña);
             this.groupBox1.Controls.Add(this.btnNuevoUsuario);
             this.groupBox1.Controls.Add(this.txtContraseña);
@@ -190,8 +191,8 @@
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtConfirmarContraseña;
+        private System.Windows.Forms.Label lblConfirmarContraseña;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox3;

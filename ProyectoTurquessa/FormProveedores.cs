@@ -7,14 +7,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logica;
 
 namespace ProyectoTurquessa
 {
     public partial class FormProveedores : Form
     {
+        private LogicaProveedor logicaProveedor;
         public FormProveedores()
         {
             InitializeComponent();
+
+            //establecer la lista
+            List<TextBox> textBoxes = new List<TextBox>();
+            textBoxes.Add(txtIdProveedor);
+            textBoxes.Add(txtEmpresa);
+            textBoxes.Add(txtNombre);
+            textBoxes.Add(txtApellido);
+            textBoxes.Add(txtCorreo);
+            textBoxes.Add(txtTelefono);
+
+
+            //lista de Etiquetas
+            List<Label> Listlabels = new List<Label>();
+            Listlabels.Add(lblProveedor);
+            Listlabels.Add(lblEmpresa);
+            Listlabels.Add(lblNombre);
+            Listlabels.Add(lblApellido);
+            Listlabels.Add(lblCorreo);
+            Listlabels.Add(lblTelefono);
+
+
+
+            //Inicializar Constructor
+            logicaProveedor = new LogicaProveedor(Listlabels, textBoxes);
+
+          
         }
 
         private void label1_Click(object sender, EventArgs e)

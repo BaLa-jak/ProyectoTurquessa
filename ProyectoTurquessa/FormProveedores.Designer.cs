@@ -44,7 +44,7 @@
             this.lblCorreo = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnVolverInicio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -242,16 +242,16 @@
             this.lblTelefono.TabIndex = 18;
             this.lblTelefono.Text = "Telefono";
             // 
-            // textBox1
+            // txtTelefono
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(174, 584);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(525, 31);
-            this.textBox1.TabIndex = 6;
+            this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTelefono.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono.Location = new System.Drawing.Point(174, 584);
+            this.txtTelefono.Multiline = true;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(525, 31);
+            this.txtTelefono.TabIndex = 6;
             // 
             // btnGuardar
             // 
@@ -312,7 +312,7 @@
             this.Controls.Add(this.btnVolverInicio);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.lblTelefono);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.lblApellido);
@@ -354,7 +354,7 @@
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label lblTelefono;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnVolverInicio;
         private System.Windows.Forms.PictureBox pictureBox1;
