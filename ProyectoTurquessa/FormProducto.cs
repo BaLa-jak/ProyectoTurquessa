@@ -154,10 +154,18 @@ namespace ProyectoTurquessa
 
         private void txtValidacion_KeyPress(object sender, EventArgs e)
         {
-
+            if (txtIdProducto.Text == "")
+            {
+                lblProducto.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblProducto.ForeColor = Color.Aqua;
+            }
         }
         private void soloLetrasValidacion_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             TextBoxEvent logicaProducto = new TextBoxEvent();
             logicaProducto.soloLetras(e);
         }
