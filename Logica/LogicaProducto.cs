@@ -85,5 +85,32 @@ namespace Logica
             List<Producto> productos = conexion.GetTable<Producto>().ToList();
             dataGrid.DataSource = productos;
         }
+
+        public void eliminarRegistroProducto()
+        {
+            if (dataGrid.SelectedRows.Count > 0)
+            {
+                DialogResult result = MessageBox.Show("¿Estás seguro de eliminar el registro?", "Confirmar", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    string clave = dataGrid.CurrentRow.Cells[0].Value.ToString();
+                    using (var conexion = new Conexion())
+                    {
+                        var producto = conexion.GetTable<Producto>().FirstOrDefault(p => p.idProducto == clave);
+                        if (producto != null)
+                        {
+                            conexion.Delete(producto);
+                            MessageBox.Show("Registro eliminado");
+                            GetElementosTablaView();
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro para eliminar");
+            }
+        }
+
     }
 }

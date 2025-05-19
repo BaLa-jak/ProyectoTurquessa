@@ -72,6 +72,7 @@ namespace ProyectoTurquessa
             FormTablaProductos tproductos = new FormTablaProductos();
             tproductos.Show();
             this.Hide();
+
         }
 
         private void FormMenuPrincipal_Load(object sender, EventArgs e)

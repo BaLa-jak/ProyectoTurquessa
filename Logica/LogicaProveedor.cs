@@ -146,5 +146,32 @@ namespace Logica
             string patron = @"^\d+$"; // Solo números
             return Regex.IsMatch(telefono, patron);
         }
+
+        public void eliminarRegistroProveedor()
+        {
+            if (dataGrid.SelectedRows.Count > 0)
+            {
+                DialogResult result = MessageBox.Show("¿Estás seguro de eliminar el registro?", "Confirmar", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    string clave = dataGrid.CurrentRow.Cells[0].Value.ToString();
+                    using (var conexion = new Conexion())
+                    {
+                        var proveedor = conexion.GetTable<Proveedor>().FirstOrDefault(p => p.idProveedor == clave);
+                        if (proveedor != null)
+                        {
+                            conexion.Delete(proveedor);
+                            MessageBox.Show("Registro eliminado");
+                            GetElementosTablaView();
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro para eliminar");
+            }
+        }
+
     }
 }

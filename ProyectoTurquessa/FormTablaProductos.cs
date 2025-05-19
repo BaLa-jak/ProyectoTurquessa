@@ -56,7 +56,17 @@ namespace ProyectoTurquessa
         private void button1_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void btnMostrarTabla_Click(object sender, EventArgs e)
+        {
             logicaProducto.GetElementosTablaView();
+
+        }
+
+        private void btnBorrarProducto_Click(object sender, EventArgs e)
+        {
+            logicaProducto.eliminarRegistroProducto();
         }
     }
 }
