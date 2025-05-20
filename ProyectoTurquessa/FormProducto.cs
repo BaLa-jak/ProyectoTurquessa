@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Logica;
+using static System.Net.Mime.MediaTypeNames;
+using Image = System.Drawing.Image;
 
 namespace ProyectoTurquessa
 {
-    public partial class FormProducto : Form
+    public partial class FormProducto : Form, IPProductoForm
     {
         private LogicaProducto logicaProducto;
         private LogicaSubirImagen subirImagen;
         private DataGridView gridImagen;
-        
+
         public FormProducto()
         {
             InitializeComponent();
@@ -40,14 +43,85 @@ namespace ProyectoTurquessa
             Listlabels.Add(lblPrecio);
             Listlabels.Add(lblDescuento);
             object[] objects = { pictureBox1, gridImagen };
-            LogicaSubirImagen subirImagen = new LogicaSubirImagen();
-            
-
-
-
+            subirImagen = new LogicaSubirImagen();
             //Inicializar Constructor
             logicaProducto = new LogicaProducto(Listlabels, textBoxes, objects);
+          
+
         }
+
+        public string idProducto
+        {
+            get { return txtIdProducto.Text; }
+            set { txtIdProducto.Text = value; }
+        }
+        public bool IdProductoReadOnly
+        {
+            get { return txtIdProducto.ReadOnly; }
+            set { txtIdProducto.ReadOnly = value; }
+        }
+        public string Nombre
+        {
+            get { return txtNombre.Text; }
+            set { txtNombre.Text = value; }
+        }
+        public string Categoria
+        {
+            get { return txtCategoria.Text; }
+            set { txtCategoria.Text = value; }
+        }
+        public string Descripcion
+        {
+            get { return txtDescripcion.Text; }
+            set { txtDescripcion.Text = value; }
+        }
+        public string Precio
+        {
+            get { return txtPrecio.Text; }
+            set { txtPrecio.Text = value; }
+        }
+        public string Descuento
+        {
+            get { return txtDescuento.Text; }
+            set { txtDescuento.Text = value; }
+        }
+        public byte[] Imagen
+        {
+            get { return subirImagen.ConvertirImagen(pictureBox1.Image); }
+            set {
+                if (value != null && value.Length > 0)
+                {
+                    try
+                    {
+                        // Convertir el array de bytes a una imagen usando el método estándar de .NET
+                        using (MemoryStream ms = new MemoryStream(value))
+                        {
+                            // Crear una imagen a partir del MemoryStream
+                            Image imagen = Image.FromStream(ms);
+
+                            // Asignar la imagen al PictureBox
+                            pictureBox1.Image = imagen;
+
+                            // Configurar el modo de visualización para mejor apariencia
+                            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Manejar cualquier error en la conversión
+                        MessageBox.Show("Error al cargar la imagen: " + ex.Message, "Error",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    // Si value es null o está vacío, limpiar la imagen
+                    pictureBox1.Image = null;
+                }
+            }
+        }
+ 
+        
 
         private void btnSubirImagen_Click(object sender, EventArgs e)
         {
@@ -148,8 +222,7 @@ namespace ProyectoTurquessa
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            LogicaSubirImagen subirImagen = new LogicaSubirImagen();  
-            subirImagen.UploadImage(pictureBox2);
+            subirImagen.UploadImage(pictureBox2); 
         }
 
         private void txtValidacion_KeyPress(object sender, EventArgs e)

@@ -11,8 +11,9 @@ using Logica;
 
 namespace ProyectoTurquessa
 {
-    public partial class FormProveedores : Form
+    public partial class FormProveedores : Form, Logica.IProveedorForm
     {
+
         private LogicaProveedor logicaProveedor;
         private DataGridView dataGrid;
         public FormProveedores()
@@ -48,6 +49,42 @@ namespace ProyectoTurquessa
 
           
         }
+        public string IdProveedor
+        {
+            get { return txtIdProveedor.Text; }
+            set { txtIdProveedor.Text = value; }
+        }
+        public string Empresa
+        {
+            get { return txtEmpresa.Text; }
+            set { txtEmpresa.Text = value; }
+        }
+        public string Nombre
+        {
+            get { return txtNombre.Text; }
+            set { txtNombre.Text = value; }
+        }
+        public string Apellido
+        {
+            get { return txtApellido.Text; }
+            set { txtApellido.Text = value; }
+        }
+        public string Correo
+        {
+            get { return txtCorreo.Text; }
+            set { txtCorreo.Text = value; }
+        }
+        public string Telefono
+        {
+            get { return txtTelefono.Text; }
+            set { txtTelefono.Text = value; }
+        }
+        public bool IdProveedorReadOnly
+        {
+            get { return txtIdProveedor.ReadOnly; }
+            set { txtIdProveedor.ReadOnly = value; }
+        }
+
 
         private void label1_Click(object sender, EventArgs e)
         {

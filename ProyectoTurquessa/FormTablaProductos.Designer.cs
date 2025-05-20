@@ -47,12 +47,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProductosGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.ProductosGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductosGridView.Location = new System.Drawing.Point(32, 446);
-            this.ProductosGridView.Margin = new System.Windows.Forms.Padding(6);
+            this.ProductosGridView.Location = new System.Drawing.Point(16, 232);
             this.ProductosGridView.Name = "ProductosGridView";
             this.ProductosGridView.RowHeadersWidth = 82;
-            this.ProductosGridView.Size = new System.Drawing.Size(1614, 677);
+            this.ProductosGridView.Size = new System.Drawing.Size(807, 352);
             this.ProductosGridView.TabIndex = 1;
+            this.ProductosGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductosGridView_CellContentClick);
             // 
             // btnVolverInicio
             // 
@@ -63,10 +63,10 @@
             this.btnVolverInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolverInicio.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.btnVolverInicio.Location = new System.Drawing.Point(1288, 253);
-            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolverInicio.Location = new System.Drawing.Point(644, 132);
+            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolverInicio.Name = "btnVolverInicio";
-            this.btnVolverInicio.Size = new System.Drawing.Size(298, 62);
+            this.btnVolverInicio.Size = new System.Drawing.Size(149, 32);
             this.btnVolverInicio.TabIndex = 62;
             this.btnVolverInicio.Text = "Volver al inicio";
             this.btnVolverInicio.UseVisualStyleBackColor = false;
@@ -81,10 +81,10 @@
             this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarProducto.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarProducto.Location = new System.Drawing.Point(948, 337);
-            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(474, 175);
+            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(298, 62);
+            this.btnAgregarProducto.Size = new System.Drawing.Size(149, 32);
             this.btnAgregarProducto.TabIndex = 61;
             this.btnAgregarProducto.Text = "Agregar producto";
             this.btnAgregarProducto.UseVisualStyleBackColor = false;
@@ -96,11 +96,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.label1.Location = new System.Drawing.Point(93, 220);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(46, 114);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(584, 67);
+            this.label1.Size = new System.Drawing.Size(306, 33);
             this.label1.TabIndex = 63;
             this.label1.Text = "Productos existentes";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -110,10 +109,9 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-690, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox1.Location = new System.Drawing.Point(-345, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(3098, 175);
+            this.pictureBox1.Size = new System.Drawing.Size(1549, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -128,10 +126,10 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Location = new System.Drawing.Point(1288, 337);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Location = new System.Drawing.Point(644, 175);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(298, 62);
+            this.btnEditar.Size = new System.Drawing.Size(149, 32);
             this.btnEditar.TabIndex = 64;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -146,10 +144,10 @@
             this.btnBorrarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrarProducto.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrarProducto.ForeColor = System.Drawing.Color.White;
-            this.btnBorrarProducto.Location = new System.Drawing.Point(599, 337);
-            this.btnBorrarProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBorrarProducto.Location = new System.Drawing.Point(300, 175);
+            this.btnBorrarProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBorrarProducto.Name = "btnBorrarProducto";
-            this.btnBorrarProducto.Size = new System.Drawing.Size(298, 62);
+            this.btnBorrarProducto.Size = new System.Drawing.Size(149, 32);
             this.btnBorrarProducto.TabIndex = 65;
             this.btnBorrarProducto.Text = "Borrar Producto";
             this.btnBorrarProducto.UseVisualStyleBackColor = false;
@@ -163,10 +161,10 @@
             this.btnMostrarTabla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarTabla.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrarTabla.ForeColor = System.Drawing.Color.White;
-            this.btnMostrarTabla.Location = new System.Drawing.Point(105, 337);
-            this.btnMostrarTabla.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMostrarTabla.Location = new System.Drawing.Point(52, 175);
+            this.btnMostrarTabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMostrarTabla.Name = "btnMostrarTabla";
-            this.btnMostrarTabla.Size = new System.Drawing.Size(298, 62);
+            this.btnMostrarTabla.Size = new System.Drawing.Size(149, 32);
             this.btnMostrarTabla.TabIndex = 66;
             this.btnMostrarTabla.Text = "Mostrar";
             this.btnMostrarTabla.UseVisualStyleBackColor = false;
@@ -174,10 +172,10 @@
             // 
             // FormTablaProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1690, 1171);
+            this.ClientSize = new System.Drawing.Size(845, 552);
             this.Controls.Add(this.btnMostrarTabla);
             this.Controls.Add(this.btnBorrarProducto);
             this.Controls.Add(this.btnEditar);
@@ -186,7 +184,6 @@
             this.Controls.Add(this.btnAgregarProducto);
             this.Controls.Add(this.ProductosGridView);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormTablaProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTablaProductos";

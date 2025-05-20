@@ -22,6 +22,11 @@ namespace ProyectoTurquessa
             List<Label> Listlabels = new List<Label>();
             List<TextBox> textBoxes = new List<TextBox>();
             logicaProducto = new LogicaProducto(Listlabels, textBoxes, objects);
+            logicaProducto.SolicitarNuevoFormulario += CrearNuevoFormularioProveedor;
+        }
+        private IPProductoForm CrearNuevoFormularioProveedor()
+        {
+            return new FormProducto();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -55,7 +60,8 @@ namespace ProyectoTurquessa
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
+            logicaProducto.ActualizarRegistroProducto();
         }
 
         private void btnMostrarTabla_Click(object sender, EventArgs e)
@@ -67,6 +73,11 @@ namespace ProyectoTurquessa
         private void btnBorrarProducto_Click(object sender, EventArgs e)
         {
             logicaProducto.eliminarRegistroProducto();
+        }
+
+        private void ProductosGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

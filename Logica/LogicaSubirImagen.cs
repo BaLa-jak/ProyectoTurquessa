@@ -10,26 +10,28 @@ namespace Logica
 {
     public class LogicaSubirImagen
     {
-        public OpenFileDialog OpenFileDialog = new OpenFileDialog();
+  
+
 
         public void UploadImage(PictureBox pb)
         {
-            string formatosImagen = "Imagenes |*.jpg;*.gif;*.png;*.bmp;*.webp";
-            pb.WaitOnLoad = true;
-            OpenFileDialog.Filter = formatosImagen;
-            OpenFileDialog.ShowDialog();
-
-            if (OpenFileDialog.FileName != string.Empty)
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                pb.ImageLocation = OpenFileDialog.FileName;
+                string formatosImagen = "Imágenes |*.jpg;*.gif;*.png;*.bmp;*.webp";
+                pb.WaitOnLoad = true;
+                openFileDialog.Filter = formatosImagen;
 
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    pb.ImageLocation = openFileDialog.FileName;
+                }
+                else
+                {
+                    MessageBox.Show("No has seleccionado una imagen");
+                }
             }
-            else
-            {
-                MessageBox.Show("No has seleccionado una imagen");
-            }
-
         }
+
 
         public byte[] ConvertirImagen(Image image)
         {
@@ -37,5 +39,7 @@ namespace Logica
             return (byte[])convertir.ConvertTo(image, typeof(byte[]));
 
         }
+
+       
     }
 }

@@ -14,13 +14,17 @@ namespace ProyectoTurquessa
     public partial class FormTablaProveedores : Form
     {
         private LogicaProveedor logicaProveedor;
+
         public FormTablaProveedores()
         {
             InitializeComponent();
+
+            FormProveedores formProveedores = new FormProveedores();
             object[] objects = {  ProveedoresGridView };
             List<Label> Listlabels = new List<Label>();
             List<TextBox> textBoxes = new List<TextBox>();
             logicaProveedor = new LogicaProveedor( Listlabels, textBoxes, objects);
+            logicaProveedor.SolicitarNuevoFormulario += CrearNuevoFormularioProveedor;
         }
 
         private void btnRegistrarProveedor_Click(object sender, EventArgs e)
@@ -36,6 +40,10 @@ namespace ProyectoTurquessa
             form1.Show();
             this.Hide();
         }
+        private IProveedorForm CrearNuevoFormularioProveedor()
+        {
+            return new FormProveedores();
+        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -44,6 +52,8 @@ namespace ProyectoTurquessa
 
         private void button1_Click(object sender, EventArgs e)
         {
+            logicaProveedor.ActualizarRegistroProveedor();
+
         }
 
         private void button3_Click(object sender, EventArgs e)

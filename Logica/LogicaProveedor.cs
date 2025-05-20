@@ -2,12 +2,18 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Datos;
+using Logica;
 using LinqToDB;
+
+
+
+
 
 namespace Logica
 {
@@ -16,6 +22,8 @@ namespace Logica
         private List<Label> ListaLabels = new List<Label>();
         private List<TextBox> textBoxes = new List<TextBox>();
         private DataGridView dataGrid;
+        public delegate IProveedorForm FormProveedorFactory();
+        public event FormProveedorFactory SolicitarNuevoFormulario;
 
         public LogicaProveedor(List<Label> ListaLabels, List<TextBox> textBoxes, object[] objects)
         {
@@ -49,6 +57,8 @@ namespace Logica
             }
 
             // Obtener valores de los campos
+            string id = textBoxes[0].Text;
+            string empresa = textBoxes[1].Text;
             string nombre = textBoxes[2].Text;
             string apellido = textBoxes[3].Text;
             string email = textBoxes[4].Text;
@@ -96,17 +106,47 @@ namespace Logica
                 ListaLabels[i].ForeColor = Color.Green;
             }
 
-            // Crear la conexión e insertar el registro 
-            Conexion conexion = new Conexion();
-            conexion.Insert(new Proveedor
+
+            using (var conexion = new Conexion())
             {
-                idProveedor = textBoxes[0].Text,
-                Empresa = textBoxes[1].Text,
-                Nombre = nombre,
-                Apellido = apellido,
-                Correo = email,
-                Telefono = telefono,
-            });
+                // Buscar si el proveedor ya existe por su ID
+                var proveedorExistente = conexion.GetTable<Proveedor>().FirstOrDefault(p => p.idProveedor == id);
+
+                if (proveedorExistente != null)
+                {
+                    // El proveedor existe, actualizar sus datos
+                    proveedorExistente.Empresa = empresa;
+                    proveedorExistente.Nombre = nombre;
+                    proveedorExistente.Apellido = apellido;
+                    proveedorExistente.Correo = email;
+                    proveedorExistente.Telefono = telefono;
+
+                    // Actualizar el registro en la base de datos
+                    conexion.Update(proveedorExistente);
+
+                    // Aviso de actualización satisfactoria
+                    MessageBox.Show("Actualización Satisfactoria");
+                }
+                else
+                {
+                    // El proveedor no existe, crear un nuevo registro
+                    var nuevoProveedor = new Proveedor
+                    {
+                        idProveedor = id,
+                        Empresa = empresa,
+                        Nombre = nombre,
+                        Apellido = apellido,
+                        Correo = email,
+                        Telefono = telefono,
+                    };
+
+                    // Insertar el nuevo registro
+                    conexion.Insert(nuevoProveedor);
+
+                    // Aviso de inserción satisfactoria
+                    MessageBox.Show("Inserción Satisfactoria");
+                }
+            }
 
             // Aviso de ingreso satisfactorio
             MessageBox.Show("Ingreso Satisfactorio");
@@ -146,6 +186,47 @@ namespace Logica
             string patron = @"^\d+$"; // Solo números
             return Regex.IsMatch(telefono, patron);
         }
+
+        public void ActualizarRegistroProveedor()
+        {
+            if (dataGrid.SelectedRows.Count > 0)
+            {
+                DialogResult result = MessageBox.Show("¿Desea editar este registro?", "Confirmar", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    string clave = dataGrid.CurrentRow.Cells[0].Value.ToString();
+                    using (var conexion = new Conexion())
+                    {
+                        var proveedor = conexion.GetTable<Proveedor>().FirstOrDefault(p => p.idProveedor == clave);
+                        if (proveedor != null && SolicitarNuevoFormulario != null)
+                        {
+                            // Solicitar nuevo formulario a través del evento
+                            IProveedorForm formProveedores = SolicitarNuevoFormulario();
+
+                            // Configurar el formulario con los datos del proveedor
+                            formProveedores.IdProveedor = proveedor.idProveedor;
+                            formProveedores.Empresa = proveedor.Empresa;
+                            formProveedores.Nombre = proveedor.Nombre;
+                            formProveedores.Apellido = proveedor.Apellido;
+                            formProveedores.Correo = proveedor.Correo;
+                            formProveedores.Telefono = proveedor.Telefono;
+                            formProveedores.IdProveedorReadOnly = true;
+
+                            // Mostrar el formulario
+                            formProveedores.Show();
+
+                            // Ocultar el formulario actual
+                           
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un registro para editar");
+            }
+        }
+    
 
         public void eliminarRegistroProveedor()
         {
