@@ -42,7 +42,7 @@ namespace ProyectoTurquessa
             Listlabels.Add(lblDescripcion);
             Listlabels.Add(lblPrecio);
             Listlabels.Add(lblDescuento);
-            object[] objects = { pictureBox1, gridImagen };
+            object[] objects = { pictureBox2, gridImagen };
             subirImagen = new LogicaSubirImagen();
             //Inicializar Constructor
             logicaProducto = new LogicaProducto(Listlabels, textBoxes, objects);
