@@ -64,7 +64,7 @@
             this.btnVolverInicio.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
             this.btnVolverInicio.Location = new System.Drawing.Point(644, 132);
-            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnVolverInicio.Name = "btnVolverInicio";
             this.btnVolverInicio.Size = new System.Drawing.Size(149, 32);
             this.btnVolverInicio.TabIndex = 62;
@@ -82,7 +82,7 @@
             this.btnAgregarProducto.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarProducto.ForeColor = System.Drawing.Color.White;
             this.btnAgregarProducto.Location = new System.Drawing.Point(474, 175);
-            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
             this.btnAgregarProducto.Size = new System.Drawing.Size(149, 32);
             this.btnAgregarProducto.TabIndex = 61;
@@ -127,7 +127,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.Location = new System.Drawing.Point(644, 175);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(149, 32);
             this.btnEditar.TabIndex = 64;
@@ -145,7 +145,7 @@
             this.btnBorrarProducto.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrarProducto.ForeColor = System.Drawing.Color.White;
             this.btnBorrarProducto.Location = new System.Drawing.Point(300, 175);
-            this.btnBorrarProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBorrarProducto.Margin = new System.Windows.Forms.Padding(2);
             this.btnBorrarProducto.Name = "btnBorrarProducto";
             this.btnBorrarProducto.Size = new System.Drawing.Size(149, 32);
             this.btnBorrarProducto.TabIndex = 65;
@@ -162,7 +162,7 @@
             this.btnMostrarTabla.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrarTabla.ForeColor = System.Drawing.Color.White;
             this.btnMostrarTabla.Location = new System.Drawing.Point(52, 175);
-            this.btnMostrarTabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMostrarTabla.Margin = new System.Windows.Forms.Padding(2);
             this.btnMostrarTabla.Name = "btnMostrarTabla";
             this.btnMostrarTabla.Size = new System.Drawing.Size(149, 32);
             this.btnMostrarTabla.TabIndex = 66;
@@ -175,7 +175,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(845, 552);
+            this.ClientSize = new System.Drawing.Size(845, 609);
             this.Controls.Add(this.btnMostrarTabla);
             this.Controls.Add(this.btnBorrarProducto);
             this.Controls.Add(this.btnEditar);

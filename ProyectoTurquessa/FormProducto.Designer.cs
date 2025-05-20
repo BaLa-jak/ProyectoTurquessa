@@ -60,7 +60,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(183, 475);
+            this.label3.Location = new System.Drawing.Point(168, 443);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 27;
@@ -72,7 +72,7 @@
             this.lblDescuento.BackColor = System.Drawing.Color.Transparent;
             this.lblDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescuento.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblDescuento.Location = new System.Drawing.Point(670, 305);
+            this.lblDescuento.Location = new System.Drawing.Point(620, 273);
             this.lblDescuento.Name = "lblDescuento";
             this.lblDescuento.Size = new System.Drawing.Size(96, 20);
             this.lblDescuento.TabIndex = 58;
@@ -83,7 +83,7 @@
             this.txtDescuento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDescuento.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDescuento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescuento.Location = new System.Drawing.Point(658, 328);
+            this.txtDescuento.Location = new System.Drawing.Point(608, 296);
             this.txtDescuento.Multiline = true;
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(445, 31);
@@ -98,7 +98,7 @@
             this.lblPrecio.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblPrecio.Location = new System.Drawing.Point(670, 228);
+            this.lblPrecio.Location = new System.Drawing.Point(620, 196);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(59, 20);
             this.lblPrecio.TabIndex = 57;
@@ -109,7 +109,7 @@
             this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPrecio.BackColor = System.Drawing.Color.Gainsboro;
             this.txtPrecio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPrecio.Location = new System.Drawing.Point(658, 251);
+            this.txtPrecio.Location = new System.Drawing.Point(608, 219);
             this.txtPrecio.Multiline = true;
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(445, 31);
@@ -124,7 +124,7 @@
             this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblDescripcion.Location = new System.Drawing.Point(140, 451);
+            this.lblDescripcion.Location = new System.Drawing.Point(125, 419);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(103, 20);
             this.lblDescripcion.TabIndex = 56;
@@ -135,7 +135,7 @@
             this.txtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDescripcion.BackColor = System.Drawing.Color.Gainsboro;
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescripcion.Location = new System.Drawing.Point(128, 474);
+            this.txtDescripcion.Location = new System.Drawing.Point(113, 442);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(445, 31);
@@ -150,7 +150,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkGray;
-            this.label2.Location = new System.Drawing.Point(695, 284);
+            this.label2.Location = new System.Drawing.Point(645, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 55;
@@ -162,7 +162,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(173, 445);
+            this.label5.Location = new System.Drawing.Point(158, 413);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 20);
             this.label5.TabIndex = 54;
@@ -174,7 +174,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkGray;
-            this.label4.Location = new System.Drawing.Point(173, 446);
+            this.label4.Location = new System.Drawing.Point(158, 414);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 20);
             this.label4.TabIndex = 53;
@@ -186,7 +186,7 @@
             this.lblCategoria.BackColor = System.Drawing.Color.Transparent;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblCategoria.Location = new System.Drawing.Point(140, 380);
+            this.lblCategoria.Location = new System.Drawing.Point(125, 348);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(87, 20);
             this.lblCategoria.TabIndex = 49;
@@ -197,7 +197,7 @@
             this.txtCategoria.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCategoria.BackColor = System.Drawing.Color.Gainsboro;
             this.txtCategoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCategoria.Location = new System.Drawing.Point(128, 403);
+            this.txtCategoria.Location = new System.Drawing.Point(113, 371);
             this.txtCategoria.Multiline = true;
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(445, 30);
@@ -212,7 +212,7 @@
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblNombre.Location = new System.Drawing.Point(140, 305);
+            this.lblNombre.Location = new System.Drawing.Point(125, 273);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(71, 20);
             this.lblNombre.TabIndex = 48;
@@ -223,7 +223,7 @@
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNombre.BackColor = System.Drawing.Color.Gainsboro;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Location = new System.Drawing.Point(128, 328);
+            this.txtNombre.Location = new System.Drawing.Point(113, 296);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(445, 31);
@@ -238,7 +238,7 @@
             this.lblProducto.BackColor = System.Drawing.Color.Transparent;
             this.lblProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProducto.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblProducto.Location = new System.Drawing.Point(140, 230);
+            this.lblProducto.Location = new System.Drawing.Point(125, 198);
             this.lblProducto.Name = "lblProducto";
             this.lblProducto.Size = new System.Drawing.Size(105, 20);
             this.lblProducto.TabIndex = 44;
@@ -249,7 +249,7 @@
             this.txtIdProducto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtIdProducto.BackColor = System.Drawing.Color.Gainsboro;
             this.txtIdProducto.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdProducto.Location = new System.Drawing.Point(128, 250);
+            this.txtIdProducto.Location = new System.Drawing.Point(113, 218);
             this.txtIdProducto.Multiline = true;
             this.txtIdProducto.Name = "txtIdProducto";
             this.txtIdProducto.Size = new System.Drawing.Size(445, 31);
@@ -266,8 +266,8 @@
             this.btnVolverInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolverInicio.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.btnVolverInicio.Location = new System.Drawing.Point(187, 576);
-            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVolverInicio.Location = new System.Drawing.Point(172, 544);
+            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolverInicio.Name = "btnVolverInicio";
             this.btnVolverInicio.Size = new System.Drawing.Size(149, 32);
             this.btnVolverInicio.TabIndex = 60;
@@ -284,8 +284,8 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(355, 576);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGuardar.Location = new System.Drawing.Point(340, 544);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(149, 32);
             this.btnGuardar.TabIndex = 59;
@@ -297,7 +297,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-182, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-199, -6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1593, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -307,10 +307,12 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(664, 385);
+            this.pictureBox2.Location = new System.Drawing.Point(608, 348);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(438, 222);
+            this.pictureBox2.Size = new System.Drawing.Size(445, 212);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 62;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -320,7 +322,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1245, 676);
+            this.ClientSize = new System.Drawing.Size(1112, 674);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnVolverInicio);

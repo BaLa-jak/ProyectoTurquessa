@@ -47,11 +47,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.label1.Location = new System.Drawing.Point(38, 193);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(19, 100);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(615, 67);
+            this.label1.Size = new System.Drawing.Size(322, 33);
             this.label1.TabIndex = 68;
             this.label1.Text = "Nuestros proveedores";
             // 
@@ -64,10 +63,10 @@
             this.btnVolverInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolverInicio.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(201)))), ((int)(((byte)(219)))));
-            this.btnVolverInicio.Location = new System.Drawing.Point(1288, 206);
-            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVolverInicio.Location = new System.Drawing.Point(654, 107);
+            this.btnVolverInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolverInicio.Name = "btnVolverInicio";
-            this.btnVolverInicio.Size = new System.Drawing.Size(266, 62);
+            this.btnVolverInicio.Size = new System.Drawing.Size(133, 32);
             this.btnVolverInicio.TabIndex = 67;
             this.btnVolverInicio.Text = "Volver al inicio";
             this.btnVolverInicio.UseVisualStyleBackColor = false;
@@ -82,10 +81,10 @@
             this.btnRegistrarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarProveedor.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarProveedor.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarProveedor.Location = new System.Drawing.Point(960, 290);
-            this.btnRegistrarProveedor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrarProveedor.Location = new System.Drawing.Point(490, 151);
+            this.btnRegistrarProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrarProveedor.Name = "btnRegistrarProveedor";
-            this.btnRegistrarProveedor.Size = new System.Drawing.Size(298, 62);
+            this.btnRegistrarProveedor.Size = new System.Drawing.Size(149, 32);
             this.btnRegistrarProveedor.TabIndex = 66;
             this.btnRegistrarProveedor.Text = "Registrar proveedor";
             this.btnRegistrarProveedor.UseVisualStyleBackColor = false;
@@ -98,11 +97,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProveedoresGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.ProveedoresGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProveedoresGridView.Location = new System.Drawing.Point(34, 384);
-            this.ProveedoresGridView.Margin = new System.Windows.Forms.Padding(6);
+            this.ProveedoresGridView.Location = new System.Drawing.Point(17, 209);
             this.ProveedoresGridView.Name = "ProveedoresGridView";
             this.ProveedoresGridView.RowHeadersWidth = 82;
-            this.ProveedoresGridView.Size = new System.Drawing.Size(1520, 658);
+            this.ProveedoresGridView.Size = new System.Drawing.Size(792, 400);
             this.ProveedoresGridView.TabIndex = 65;
             this.ProveedoresGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -111,10 +109,9 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-740, -13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox1.Location = new System.Drawing.Point(-370, -7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(3098, 175);
+            this.pictureBox1.Size = new System.Drawing.Size(1661, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
@@ -128,10 +125,10 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Location = new System.Drawing.Point(1288, 290);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Location = new System.Drawing.Point(654, 151);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(266, 62);
+            this.btnEditar.Size = new System.Drawing.Size(133, 32);
             this.btnEditar.TabIndex = 70;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -146,10 +143,10 @@
             this.btnBorrarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrarProveedor.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrarProveedor.ForeColor = System.Drawing.Color.White;
-            this.btnBorrarProveedor.Location = new System.Drawing.Point(625, 290);
-            this.btnBorrarProveedor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBorrarProveedor.Location = new System.Drawing.Point(322, 151);
+            this.btnBorrarProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBorrarProveedor.Name = "btnBorrarProveedor";
-            this.btnBorrarProveedor.Size = new System.Drawing.Size(298, 62);
+            this.btnBorrarProveedor.Size = new System.Drawing.Size(149, 32);
             this.btnBorrarProveedor.TabIndex = 71;
             this.btnBorrarProveedor.Text = "Borrar Proveedor";
             this.btnBorrarProveedor.UseVisualStyleBackColor = false;
@@ -163,10 +160,10 @@
             this.btnMostrarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarProveedor.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrarProveedor.ForeColor = System.Drawing.Color.White;
-            this.btnMostrarProveedor.Location = new System.Drawing.Point(34, 290);
-            this.btnMostrarProveedor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMostrarProveedor.Location = new System.Drawing.Point(17, 151);
+            this.btnMostrarProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMostrarProveedor.Name = "btnMostrarProveedor";
-            this.btnMostrarProveedor.Size = new System.Drawing.Size(266, 62);
+            this.btnMostrarProveedor.Size = new System.Drawing.Size(133, 32);
             this.btnMostrarProveedor.TabIndex = 72;
             this.btnMostrarProveedor.Text = "Mostrar";
             this.btnMostrarProveedor.UseVisualStyleBackColor = false;
@@ -174,10 +171,10 @@
             // 
             // FormTablaProveedores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1602, 1067);
+            this.ClientSize = new System.Drawing.Size(834, 621);
             this.Controls.Add(this.btnMostrarProveedor);
             this.Controls.Add(this.btnBorrarProveedor);
             this.Controls.Add(this.btnEditar);
@@ -186,7 +183,6 @@
             this.Controls.Add(this.btnVolverInicio);
             this.Controls.Add(this.btnRegistrarProveedor);
             this.Controls.Add(this.ProveedoresGridView);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormTablaProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTablaProveedores";
